@@ -3,7 +3,7 @@
 A Processus handler to send messages to Slack via its incoming WebHook
 
 [![Node version](https://img.shields.io/badge/node-v5.0.0-green.svg)](https://nodejs.org/en/)
-[![NPM version](https://img.shields.io/npm/v/processus.svg?style=flat-square)](https://www.npmjs.com/package/processus)
+[![NPM version](https://img.shields.io/npm/v/processus-handler-slack.svg?style=flat-square)](https://www.npmjs.com/package/processus-handler-slack)
 [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/cloudb2/processus/blob/master/LICENSE)
 
 <hr>
