@@ -49,9 +49,7 @@ and make a note of the webhookURL and channel you wish to use.
 Update the ```[webhookURL]``` and ```[#channel or @user]``` according to your slack team.
 
 ***Note***
-
-1. If you cloned the repo change ```[processus-handler-slack]``` to ```../../../processus-handler-slack```
-2. If you installed from NPM change ```[processus-handler-slack]``` to ```processus-handler-slack```
+If you cloned the repo change the handler property ```processus-handler-slack``` to ```../../../processus-handler-slack```
 
 ```
 ---
@@ -60,7 +58,7 @@ Update the ```[webhookURL]``` and ```[#channel or @user]``` according to your sl
   tasks:
     Send a message to Slack's incoming WebHook.:
       blocking: true
-      handler: "[processus-handler-slack]"
+      handler: "processus-handler-slack"
       data:
         webhookURL: "[webhookURL]"
         payload:

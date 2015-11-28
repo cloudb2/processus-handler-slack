@@ -1,15 +1,16 @@
 ---
-  name: "Demo Slack"
-  description: "A demo showing the use of the slack handler to make a incoming webhook call."
+  name: Demo Slack
+  description: A demo showing the use of the slack handler to make a incoming webhook call.
   tasks:
     Send a message to Slack's incoming WebHook.:
       blocking: true
-      handler: "[processus-handler-slack]"
+      handler: processus-handler-slack
       data:
-        webhookURL: "[webhookURL]"
+        webhookURL: [webhookURL]
         payload:
-          username: "processus"
+          username: processus
           channel: "[#channel or @user]"
-          text: "Hi from Processus https://github.com/cloudb2/processus-handler-slack\n\nMessage sent from workflow $[id]"
-          icon_url: "https://slack.com/img/icons/app-57.png"
+          text: Hi from Processus https://github.com/cloudb2/processus-handler-slack
+                Message sent from workflow $[id]
+          icon_url: https://slack.com/img/icons/app-57.png
           unfurl_links: true

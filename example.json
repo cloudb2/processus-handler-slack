@@ -4,7 +4,7 @@
   "tasks": {
     "Send a message to Slack's incoming WebHook.": {
       "blocking": true,
-      "handler": "[processus-handler-slack]",
+      "handler": "processus-handler-slack",
       "data": {
         "webhookURL": "[webhookURL]",
         "payload": {

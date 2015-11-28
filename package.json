@@ -1,6 +1,6 @@
 {
   "name": "processus-handler-slack",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Processus handler to send messages to Slack via its incoming WebHook",
   "homepage": "http://cloudb2.github.io/processus-handler-slack/",
   "engine": {
