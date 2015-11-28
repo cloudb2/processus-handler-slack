@@ -10,13 +10,12 @@ A Processus handler to send messages to Slack via its incoming WebHook
 
 # Getting Started
 
-Using the Processus handler for Slack's incoming webhooks is relatively simple. For one of the
+Using the Processus handler for Slack's incoming webhooks is relatively simple. Choose one of the
 installation options below and then invoke from your project using the API or
-from the command line (examples below).
+from the command line (example below).
 
 Make sure you have the an incoming webhook configured for your Slack team and you
-know the URL. See [https://api.slack.com/incoming-webhooks](https://api.slack.com/incoming-webhooks) for
-more information.
+know the URL. See [https://api.slack.com/incoming-webhooks](https://api.slack.com/incoming-webhooks) for more information.
 
 ## Installation
 
@@ -75,14 +74,8 @@ Update the ```[webhookURL]``` and ```[#channel or @user]``` according to your sl
 
 ### Example Usage from CLI
 
-If you cloned the repo execute
 ```
-./node_modules/processus/bin/processus-cli -l debug -f example.yml
-```
-
-If you installed from NPM
-```
-./bin/processus-cli -l debug -f example.yml
+./node_modules/processus/bin/processus-cli -l info -f example.yml
 ```
 
 You should see something similar to the following on the command line
@@ -104,30 +97,6 @@ info: ✰ Workflow [local-example.json] with id [f1ed1989-2d36-473d-b0b6-ce5fad3
 In your slack team and channel you should a message.
 ![Slack Message](./images/example-slack.png)
 
+That's it!
 
-### Usage API
-```
-var processus = require('processus');
-
-var wf = {
-  "name": "Example Workflow",
-  "description": "An example workflow using the API.",
-  "tasks":{
-    "task 1": {
-      "description": "Demo task to execute echo command.",
-      "blocking": true,
-      "handler" : "../taskhandlers/execHandler",
-      "data": {
-        "cmd": "echo 'Congratulations you called a workflow using the API.'"
-      }
-    }
-  }
-};
-
-processus.execute(wf, function(err, workflow){
-  if(!err) {
-    console.log(workflow.tasks['task 1'].data.stdout);
-  }
-});
-
-```
+See the [Slack Incoming Webhooks](https://api.slack.com/incoming-webhooks) and [Processus User Guide](http://cloudb2.github.io/processus/) for more details on how this can be used.
