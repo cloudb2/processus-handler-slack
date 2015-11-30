@@ -5,7 +5,7 @@
     Send a message to Slack's incoming WebHook.:
       blocking: true
       handler: processus-handler-slack
-      data:
+      properties:
         webhookURL: [webhookURL]
         payload:
           username: processus

@@ -59,7 +59,7 @@ If you cloned the repo change the handler property ```processus-handler-slack```
     Send a message to Slack's incoming WebHook.:
       blocking: true
       handler: "processus-handler-slack"
-      data:
+      properties:
         webhookURL: "[webhookURL]"
         payload:
           username: "processus"
